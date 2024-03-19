@@ -13,7 +13,7 @@
     <h1>Create Web to Lead Form</h1>
     <form 
      action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D5g00000KLeSU"
-     method="POST" onsubmit="beforesubmit()">
+     method="POST" onsubmit="beforesubmit(event)">
     
     <input type=hidden name="oid" value="00D5g00000KLeSU"/>
     <input type=hidden name="retURL" value="https://arpandeb19.github.io/New-Mini-Project/thanks.html"/>
@@ -68,7 +68,9 @@
     
     <input type="submit" name="submit" class="submit">
     
-    <div class="g-recaptcha" data-sitekey="6Lc8q50pAAAAAGt3TODTi6DSeCOTFmP39RBUcvxe"></div><br>
+    <div class="g-recaptcha"
+         data-callback="capthchasuccess"
+         data-sitekey="6Lc8q50pAAAAAGt3TODTi6DSeCOTFmP39RBUcvxe"></div><br>
 
     </form>
   </body>
