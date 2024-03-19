@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web to Lead Form</title>
     <link rel="stylesheet" href="style.css"></link>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
     <script src="script.js"></script>
 </head>
   <body>
@@ -17,6 +18,14 @@
     <input type=hidden name="oid" value="00D5g00000KLeSU"/>
     <input type=hidden name="retURL" value="https://arpandeb19.github.io/New-Mini-Project/thanks.html"/>
     <input type=hidden name="Lead_Date__c" class="outputdate"/>
+    <input 
+       type=hidden 
+       name='captcha_settings' 
+       value='{
+          "keyname":"WebtoLeadBootcamp",
+          "fallback":"true",
+          "orgId":"00D5g00000KLeSU",
+          "ts":""}'/>
 
     
     <label for="first_name">First Name</label>
@@ -59,6 +68,8 @@
     
     <input type="submit" name="submit" class="submit">
     
+    <div class="g-recaptcha" data-sitekey="6Lc8q50pAAAAAGt3TODTi6DSeCOTFmP39RBUcvxe"></div><br>
+
     </form>
   </body>
 </html>
